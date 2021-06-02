@@ -57,7 +57,7 @@ where `QNet` returns a feature vector, the length of which is determiend by the 
 
 - `parial_meas_x` where x is the number of qubits to be measured between each layer. `x` can also be 'half'.
 
-###Data handlers
+### Data handlers
 
 - `frqi` (https://link.springer.com/article/10.1007/s11128-010-0177-y)
 - `havlicek` (https://arxiv.org/abs/1804.11326)

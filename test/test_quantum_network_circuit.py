@@ -1,4 +1,7 @@
 import copy
+import sys
+
+sys.path.append('quantum-neural-network')
 from unittest import TestCase
 
 from qiskit import QuantumCircuit, Aer, execute

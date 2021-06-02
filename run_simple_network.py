@@ -1,7 +1,10 @@
 """Single forward pass of quantum neural network."""
 import logging
+import sys
 
 import numpy as np
+
+sys.path.append('quantum-neural-network')
 
 from config import Config
 from quantum_network_circuit import QuantumNetworkCircuit

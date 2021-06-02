@@ -1,6 +1,9 @@
+import sys
 from unittest import TestCase
 
 import numpy as np
+
+sys.path.append('quantum-neural-network')
 
 from config import Config
 from gradient_calculator import calculate_gradient_list
