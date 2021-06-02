@@ -7,9 +7,13 @@ This is a library for creating and training quantum neural networks with Qiskit.
 Images can be loaded into a quantum circuit using the data handlers in `quantum-neural-network/input`. The parameters
 can then be trained by an external optimiser.
 
-A working example of a single forward pass for a random input vector can be found in `run_simple_network.py`. This uses
-a `vector_data_handler`
-in which the data is inputted as single qubit rotations on a product state.
+A working example of a single forward pass for a random input vector can be run:
+
+```
+python run_simple_network.py
+```
+
+This uses a `vector_data_handler` in which the data is inputted as single qubit rotations on a product state.
 
 These networks can run by themselves or can be integrated as layers into a larger classical neural network.
 
