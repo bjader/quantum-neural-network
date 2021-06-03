@@ -1,6 +1,9 @@
 # Quantum neural network
 
-This is a library for creating and training quantum neural networks with Qiskit.
+This is a library for creating and training quantum neural networks with Qiskit. It has been used in the following works:
+
+>[Quantum Self-Supervised Learning](https://arxiv.org/abs/2103.14653)
+
 
 ## Training with entirely quantum networks
 
@@ -66,3 +69,12 @@ where `QNet` returns a feature vector, the length of which is determiend by the 
 - `frqi` (https://link.springer.com/article/10.1007/s11128-010-0177-y)
 - `havlicek` (https://arxiv.org/abs/1804.11326)
 - `neqr` (https://link.springer.com/article/10.1007/s11128-013-0567-z)
+
+## Usage and citation
+
+This repository was developed in conjunction with the following work, which we kindly ask any publication, whitepaper or
+project using this code to cite:
+
+```
+Jaderberg, B., Anderson, L.W., Xie, W., Albanie, S., Kiffner, M. and Jaksch, D., 2021. Quantum Self-Supervised Learning. arXiv preprint arXiv:2103.14653.
+```
