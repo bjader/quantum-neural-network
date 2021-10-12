@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='quantum-neural-network',
-    version='0.1.0',
+    version='0.1.1',
     author='Benjamin Jaderberg',
     author_email='benjamin.jaderberg@physics.ox.ac.uk',
     packages=find_packages(),
@@ -12,9 +12,6 @@ setup(
     description='For building quantum neural networks in Qiskit and integrating with PyTorch',
     long_description=open('README.md').read(),
     install_requires=[
-        "qiskit",
-        "torch",
-        "torchvision",
-        "torchsummary"
+        "qiskit"
     ],
 )
