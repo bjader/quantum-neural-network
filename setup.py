@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='quantum-neural-network',
-    version='0.1.1',
+    name='qnn',
+    version='0.1.2',
     author='Benjamin Jaderberg',
     author_email='benjamin.jaderberg@physics.ox.ac.uk',
     packages=find_packages(),

@@ -41,6 +41,7 @@ class QuantumNetworkCircuit:
 
         self.statevectors = []
         self.gradients = []
+        self.transpiled = False
 
     def create_input_circuit(self):
         return self.config.data_handler.get_quantum_circuit(self.input_data)
@@ -88,7 +89,9 @@ class QuantumNetworkCircuit:
         return bound_qc
 
     def evaluate_circuit(self, parameter_list, shots=100):
-        self.qc = transpile(self.qc, optimization_level=0, basis_gates=['cx', 'u1', 'u2', 'u3'])
+        # if self.transpiled is False:
+        #     self.qc = transpile(self.qc, optimization_level=0, basis_gates=['cx', 'u1', 'u2', 'u3'])
+        #     self.transpiled = True
         circuit = self.bind_circuit(parameter_list)
         job = execute(circuit, backend=self.backend, shots=shots)
         return job.result()
