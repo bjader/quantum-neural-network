@@ -3,7 +3,7 @@ from __future__ import print_function
 import logging
 import sys
 
-sys.path.append("../quantum-neural-network")
+sys.path.append("../qnn")
 
 import argparse
 

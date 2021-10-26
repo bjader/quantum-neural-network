@@ -34,7 +34,6 @@ class NEQRBennettDataHandler(DataHandler):
         self.qr = QuantumRegister(self.n_location_qubits + self.n_ancilla_qubits + self.n_colour_qubits)
         self.qc = QuantumCircuit(self.qr, name='NEQR')
 
-        self.location_register = self.qr[:self.n_location_qubits]
         self.colour_register = self.qr[self.n_location_qubits:self.n_location_qubits + self.n_colour_qubits]
         self.ancilla_register = self.qr[
                                 self.n_location_qubits + self.n_colour_qubits:self.n_location_qubits + self.n_colour_qubits + self.n_ancilla_qubits:]
@@ -95,8 +94,8 @@ class NEQRBennettDataHandler(DataHandler):
         colour_qubits_to_flip = np.where(base_colour != target_colour)[0]
 
         for qubit in colour_qubits_to_flip:
-            self.qc.mct(q_controls=self.location_register, q_target=self.colour_register[qubit],
-                        q_ancilla=self.ancilla_register, mode='basic')
+            self.qc.mct(self.location_register, self.colour_register[qubit],
+                        self.ancilla_register, mode='basic')
 
     def reverse_location_flips(self, qubits_to_flip):
 

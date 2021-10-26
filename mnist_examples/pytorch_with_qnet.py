@@ -6,7 +6,7 @@ import os
 import sys
 import time
 
-sys.path.append("../quantum-neural-network")
+sys.path.append("../qnn")
 
 import argparse
 

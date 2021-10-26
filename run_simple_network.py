@@ -4,7 +4,7 @@ import sys
 
 import numpy as np
 
-sys.path.append('quantum-neural-network')
+sys.path.append('qnn')
 
 from config import Config
 from quantum_network_circuit import QuantumNetworkCircuit
