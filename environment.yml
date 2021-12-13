@@ -5,6 +5,8 @@ dependencies:
   - matplotlib
   - rise
   - opencv
+  - pytorch
+  - torchvision
   - pip:
       - qiskit
       - pylatexenc
